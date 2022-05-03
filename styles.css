@@ -1,0 +1,283 @@
+/* Color-variables */
+
+:root {
+    --darkCyan: hsl(179, 62%, 43%);
+    --lightCyan: hsl(179, 48%, 52%);
+    --brightYellow: hsl(71, 73%, 54%);
+    --lightGray: hsl(204, 43%, 93%);
+    --grayBlue: hsl(218, 22%, 67%);
+
+}
+
+
+
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* MOBILE DESIGN: */
+
+.vorlage {
+    width: 100vw;
+    position: absolute;
+    z-index: -inherit;
+    opacity: 0.5;
+    left: 0;
+    top: 0;
+  }
+
+
+  body {
+      background-color: var(--lightGray);
+      font-family: 'Karla', sans-serif;
+  }
+
+  .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 69px;
+      
+      
+  }
+
+
+  section {
+      width: 83%;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
+      
+      
+  }
+
+  .section1 {
+    background-color: white;
+    border-top-left-radius: 5.6px;
+    border-top-right-radius: 5.6px;
+    padding-bottom: 1.9rem;
+    padding-top: 1.7rem;
+   
+  }
+
+  .section2 {
+    background-color: var(--darkCyan);
+    padding-top: 1.5rem;
+    color: white;
+    padding-bottom: 1.3rem;
+    
+  }
+
+  .section3 {
+    background-color: var(--lightCyan);
+    border-bottom-left-radius: 5.6px;
+    border-bottom-right-radius: 5.6px;
+    padding-top: 1.42rem;
+    color: white;
+    padding-bottom: 1.45rem;
+  }
+
+
+
+
+.headline {    
+    font-weight: 700;
+    font-size: 19px;
+    letter-spacing: -0px;
+  
+    color: var(--darkCyan);
+    
+
+}
+
+.guarantee {
+  font-size: 14px;
+  margin-top: 1.5rem;
+  line-height: 1.14rem;
+  letter-spacing: 0.1px;
+  color: var(--brightYellow);
+}
+
+
+.desText {
+  font-weight: 400px;
+  font-size: 13px;
+  margin-top: 1.1rem;
+  letter-spacing: 0.1px;
+  line-height: 1.54rem;
+}
+
+.ms {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  margin-top: 0.7rem;
+  letter-spacing: -1.3px;
+  
+}
+
+.dollarSign {
+  font-size: 35px;
+  margin-right: 0.7rem;
+}
+
+.perMonth {
+  letter-spacing: 0px;
+  font-size: 15px;
+}
+
+.priceDescription {
+  margin-top: 0.3rem;
+  letter-spacing: -0.4px;
+}
+
+.signUp {
+  all: initial;
+  margin-top: 1.7rem;
+  width: 100%;
+  height: 3rem;
+  background-color: var(--brightYellow);
+  border-radius: 8px;
+  font-family: 'Karla', sans-serif;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  
+}
+
+
+.whyUsHead {
+  font-size: 18px;
+  letter-spacing: -0.5px;
+}
+
+.whyUsText {
+  font-size: 14px;
+  padding-top: 1.18rem;
+  letter-spacing: -0.3px;
+  line-height: 135%;
+}
+
+.signUp:active {
+  background-color: green;
+  transition: 0.5s ease;
+}
+
+
+
+/* DESKTOP DESIGN: */
+
+
+@media only screen and (min-width: 1000px){
+
+  body{
+    display: grid;
+    place-items: center center;
+  }
+  
+  .card{
+
+      display: grid;
+      grid-template-rows: 216fr 259fr;
+      grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+      "header header"
+      "price description";
+      width: 37.5%
+
+  }
+
+ 
+
+  section{
+
+      width: 100%;
+      height: 100%;
+      padding-top: 2.4rem;
+      padding-right: 2.4rem;
+      padding-left: 2.4rem;
+      
+
+  }
+
+
+
+  .section1{
+
+      grid-area: header;
+      margin-bottom: 0rem;
+  }
+
+
+
+  .section2{
+
+      grid-area: price;
+      border-bottom-left-radius: 5.6px;
+      margin-bottom: 1.3rem;
+  }
+
+
+
+  .section3{
+
+      grid-area: description;
+      border-bottom-left-radius: 0px;
+      margin-bottom: 1.3rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
